@@ -31,6 +31,7 @@
 
 .form-register__input{
     width: 100%;
+    box-sizing: border-box;
     padding: 16px;
     border: 1px solid #CCCCCC;
     border-radius: 8px;  
@@ -129,5 +130,11 @@
 .form-register__button_submit{
     color: #fff;
     background-color: #7A5CFA;
+}
+
+.form-register__select{
+    appearance: none;
+    background: url(../../public/open-select.svg) no-repeat right;
+    background-position-x: calc(100% - 22px);
 }
 

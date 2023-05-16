@@ -1,5 +1,6 @@
 import { Controller, useForm } from "react-hook-form";
 import Switch from "react-switch";
+import Select from 'react-select';
 
 import '../css/Form.css'
 
@@ -14,7 +15,7 @@ export const FromPage = () =>{
         alert(JSON.stringify(data))
     }
 
-    let options = ["Dropdown option", "Dropdown option 1", "Dropdown option 2"]
+    let options = ["Dropdown option", "Dropdown option 1",  "Dropdown option 2"]
 
     return(
         <main className='main-container'>
@@ -116,8 +117,9 @@ export const FromPage = () =>{
                         </div>
                     <div className='form-register__group'>
                         <label className='form-register__label' for="dropdownTitle">Dropdown Title</label>
+
                         <select 
-                        className="form-register__input"
+                        className="form-register__input form-register__select"
                         {...register("dropdownTitle")}
                         id="dropdownTitle">
                             {options.map(option=>
