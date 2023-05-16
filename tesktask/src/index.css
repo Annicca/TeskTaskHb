@@ -21,7 +21,7 @@ body {
 } */
 
 .main-container{
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background:  rgba(122, 92, 250, .2);
   transition: .3s all;

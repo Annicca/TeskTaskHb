@@ -14,7 +14,6 @@ export const FromPage = () =>{
         alert(JSON.stringify(data))
     }
 
-    let radioSelections = ["Radio Selection 1", "Radio Selection 2", "Radio Selection 3"]
     let options = ["Dropdown option", "Dropdown option 1", "Dropdown option 2"]
 
     return(
@@ -118,18 +117,19 @@ export const FromPage = () =>{
                     <div className='form-register__group'>
                         <label className='form-register__label' for="dropdownTitle">Dropdown Title</label>
                         <select 
+                        className="form-register__input"
                         {...register("dropdownTitle")}
                         id="dropdownTitle">
                             {options.map(option=>
-                                <option value={option} key={option}>
+                                <option value={option} key={option} className="form-register__option" > 
                                     {option}
                                 </option>
                             )}
                         </select>   
                     </div>
                     <div className="form-register__button-container">
-                        <button type = "reset" className="form-register__button_reset">Cancel</button>
-                        <button type = "submit" className="form-register__button_submit" disabled={!isValid}>Next</button>
+                        <button type = "reset" className="form-register__button">Cancel</button>
+                        <button type = "submit" className="form-register__button form-register__button_submit" disabled={!isValid}>Next</button>
                     </div>
                 </div>
             </form>
