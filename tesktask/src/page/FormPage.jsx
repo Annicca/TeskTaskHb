@@ -66,7 +66,7 @@ export const FromPage = () =>{
                         id = "rememberMe" />
                         <label for="rememberMe">Remember me</label>
                     </div>
-                    <div className='form-register__group form-register__group_switch'>
+                    <div className='form-register__group form-register__group_inline'>
                         <Controller
                         control={control}
                         name="off"
@@ -85,43 +85,36 @@ export const FromPage = () =>{
                             id = "off"
                             />
                             <label for="off">{value ? <span>On</span> : <span>Off</span>}</label>
-                        </>
-}
+                        </>}
                         />
-                        
                     </div>
-                    <div className='form-register__group form-register__group_radio'>
-                        <div>
+                    <div className='form-register__group form-register__group_inline'>
+                        
                             <input {...register("radioSelection")} 
                                         className='form-register__radio' 
                                         type="radio" 
-                                        name="radioGroup" 
                                         value ={"Radio Selection 1"} 
-                                        
                                         id={"radioSelection1"} />
                             <label for={"radioSelection1"}>Radio Selection 1</label>
-                        </div>
-                        <div>
+                    </div>
+                    <div className='form-register__group form-register__group_inline'>
+                        
                             <input {...register("radioSelection")} 
                                         className='form-register__radio' 
                                         type="radio" 
-                                        name="radioGroup" 
                                         value ={"Radio Selection 2"} 
-                                        
                                         id={"radioSelection2"} />
                             <label for={"radioSelection2"}>Radio Selection 2</label>
-                        </div>
-                        <div>
+                    </div>
+                    <div className='form-register__group form-register__group_inline'>
+                        
                             <input {...register("radioSelection")} 
                                         className='form-register__radio' 
                                         type="radio" 
-                                        name="radioGroup" 
                                         value ={"Radio Selection 3"} 
-                                        
                                         id={"radioSelection3"} />
                             <label for={"radioSelection3"}>Radio Selection 3</label>
                         </div>
-                    </div>
                     <div className='form-register__group'>
                         <label className='form-register__label' for="dropdownTitle">Dropdown Title</label>
                         <select 

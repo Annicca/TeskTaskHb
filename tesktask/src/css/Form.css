@@ -64,7 +64,7 @@
     background-image: url("../../public/ok.svg");
 }
 
-.form-register__group_switch{
+.form-register__group_inline{
     display: inline-flex;
     align-items: center;
 }
@@ -79,36 +79,19 @@
 }
 
 .form-register__radio {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
-
-  .form-register__radio+label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-  }
-
-  .form-register__radio+label::before {
-    content: '';
-    display: inline-block;
+    appearance: none;
     width: 24px;
     height: 24px;
-    flex-shrink: 0;
-    flex-grow: 0;
     border: 1px solid #CCCCCC;
     border-radius: 50%;
-    margin-right: 0.5em;
+    margin-right: 16px;
+  }
+
+.form-register__radio:checked {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
-    margin-right: 16px;
-}
-
-.custom-radio:checked+label::before {
-    border-color: #7A5CFA;
-    border: 5px solid #7A5CFA;
+    background-image:url(../../public/dot.svg)
 }
 
 .form-register__message{
