@@ -1,0 +1,123 @@
+.form-register{
+    height: 100vh;
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: white;
+    color: #666666;
+    font-weight: 400;
+}
+
+.form-register__container{
+    max-width: 564px;
+    padding: 96px 0 92px 0 ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.form-register__group{
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form-register__label{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.form-register__input{
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;  
+}
+
+.form-register__checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form-register__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form-register__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+.form-register__checkbox:checked+label::before {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../public/ok.svg");
+}
+
+.form-register__group_switch{
+    display: inline-flex;
+    align-items: center;
+}
+
+.form-register__switch{
+    margin-right: 16px;
+}
+
+.form-register__group_radio{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-register__radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .form-register__radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  .form-register__radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 16px;
+}
+
+.custom-radio:checked+label::before {
+    border-color: #7A5CFA;
+    border: 5px solid #7A5CFA;
+}
+
+.form-register__message{
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 8px;
+} 
+
+.form-register__message_error{
+    color: #EB5757;
+}
+
