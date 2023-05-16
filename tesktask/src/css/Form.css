@@ -18,6 +18,7 @@
 }
 
 .form-register__group{
+    position: relative;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
@@ -35,6 +36,21 @@
     padding: 16px;
     border: 1px solid #CCCCCC;
     border-radius: 8px;  
+}
+
+.form-register__input:focus{
+    border: 2px solid #7A5CFA;
+}
+
+.form-register__input_error{
+    border: 2px solid #EB5757;
+}
+
+.form-register__error{
+    position: absolute;
+    display: block;
+    top: 36px;
+    right: 18px;
 }
 
 .form-register__checkbox{
@@ -71,6 +87,7 @@
 }
 
 .form-register__switch{
+    border: 1px solid #CCCCCC;
     margin-right: 16px;
 }
 
@@ -99,6 +116,11 @@
     padding: 16px;
     border: 1px solid #CCCCCC;
     max-width: 100%; 
+}
+
+.form-register__option:checked{
+    background-color: #7A5CFA;
+    color:#fff;
 }
 
 .form-register__message{
